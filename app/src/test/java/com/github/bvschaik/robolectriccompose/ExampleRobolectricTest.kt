@@ -1,7 +1,7 @@
 package com.github.bvschaik.robolectriccompose
 
 import android.widget.Button
-import androidx.compose.ui.test.junit4.createComposeRule
+import androidx.compose.ui.test.junit4.createEmptyComposeRule
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
 import androidx.fragment.app.Fragment
@@ -19,7 +19,7 @@ import kotlin.test.assertNotNull
 class ExampleRobolectricTest(val name: String) {
 
     @get:Rule
-    val composeTestRule = createComposeRule()
+    val composeTestRule = createEmptyComposeRule()
 
     @Before
     fun init() {
